@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+
+html {
+	width: 100%;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+h1,
+h2,
+p {
+	margin: 0px;
+	padding: 0px;
+	color: white;
+}
+
+h2 {
+	margin: 6px;
+	text-align: center;
+	font-size: 24px;
+}
+
+p {
+	margin-bottom: 6px;
+	letter-spacing: 3px;
+	line-height: 32px;
+	font-size: 18px;
+}
+
+a {
+	display: inline-block;
+	width: 200px;
+	font-weight: bold;
+	padding: 8px;
+	color: white;
+	border: 3px solid white;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	transition: background-color 0.2s ease-out,
+		color 0.2s ease-out;
+}
+
+a:hover,
+a:active {
+	background-color: white;
+	color: black;
+	transition: background-color 0.3s ease-in,
+		color 0.3s ease-in;
+}
+
+#slideshow {
+	width: 40%;
+	background-color: grey;
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	top: -30px;
+	bottom: -30px;
+	right: 10%;
+	z-index: -1;
+}
+
+.hol {
+	margin-left: 16px;
+}
+
+main {
+	margin: 12px;
+	height: 80%;
+	overflow: hidden;
+	width: calc(100% - 24px);
+	position: relative;
+}
+
+.main-blur {
+	background-image: url('../img/bg1.png');
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	width: 115%;
+	height: 115%;
+	top: -5%;
+	bottom: 0;
+	right: 0;
+	left: -5%;
+	filter: blur(5px);
+
+}
+
+.main-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+}
+
+.main-content h1 {
+	font-size: 42px;
+}
+
+.content {
+	width: calc(100% - 24px);
+	background-color: #121212;
+	padding: 12px;
+	position: relative;
+}
+
+.content-panel {
+	overflow: hidden;
+	width: calc(100% - 24px);
+	position: relative;
+	background-color: white;
+	padding: 12px;
+}
+
+.content-panel .main-blur {
+	background-image: url('../img/bg2.jpg');
+	z-index: 0;
+	filter: blur(15px)
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 100%;
+	min-height: 400px;
+}
+
+.grid {
+	width: calc(33.3% - 7px);
+	text-align: center;
+	display: inline-block;
+}
+
+.grid img {
+	width: calc(100% - 16px);
+	max-width: 120px;
+	margin: 8px;
+}
+
+.white {
+	background-color: white;
+}
+
+.grid-l {
+	width: calc(66.6% - 7px);
+	margin-top: 12px;
+}
+
+.grid-img img {
+	max-width: 360px;
+	width: calc(100% - 24px);
+}
+
+.work {
+	min-height: 400px;
+}
+
+.black-text h2,
+.black-text p {
+	color: black;
+}
+
+@media only screen and (max-width: 800px) {
+	.grid {
+		width: 100%;
+	}
+}
